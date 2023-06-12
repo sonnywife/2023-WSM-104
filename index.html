@@ -16,12 +16,25 @@
         <!-- 브라우저의 제목을 나타냅니다 -->
         <!--제목-->
         <title>나를 소개합니다</title>
+
+        <link href="./style.css" rel="stylesheet">
+
        <style>
 
-        h1{
-            color:lightpink
-        }
+       table{
+            border-collapse: collapse; /*셀사이의 경계를 한개로 병합*/
+            /* 가운데 배치*/
+            margin: auto;
 
+       }
+        
+       td,th{
+        /*태두리*/
+        border: 1px solid black;
+        padding: 10px;
+        text-align: center;
+        
+       }
 
        </style>
     </head>
@@ -30,31 +43,31 @@
 <body>
     <!-- 제목(heading) <h1>~</h1> -->
     <!--h1~h2까지있으며 숫자가 클수록 글자의 크기는 작아진다-->
-        <h1>나를 소개합니다</h1>
+        <h1 id ="heading">나를 소개합니다</h1>
 
         <!--그림불러오기 src:불러올 파일, alt:그림불러오기를 실패했을때 대체되는 글자-->
         <!--scr,alt와 같은속성은 태그의 세부적인 정보를 제공한다 -->
         <img src="cgscgs.jpg" alt="내그림!!!">
             <!-- h의 숫자가 커질수록 글자가 작아진다 -->
-        <h2>취미</h2>
+        <h2 id ="jj">취미</h2>
         <!--순서가 없는 목록(unordered list)-->
         <ul>
             <!--목록(list)-->
-        <li>코딩</li>
-        <li>축구보기</li>
-        <li>독서</li>
+        <li class="hobby">코딩</li>
+        <li class="hobby">축구보기</li>
+        <li class="hobby">독서</li>
         </ul>
         <!--순서가 있는 목록 (ordered list)-->
 <h2>좋아하는음식순위</h2>
 <ol>
 
-<li> 멜론</li>
-<li> 피자</li>
-<li> 수박</li>
+<li class="food"> 멜론</li>
+<li class="food"> 피자</li>
+<li class="food"> 수박</li>
 
 </ol>
-
-<h2>내가 자주가는사이트</h2>
+  
+<h2 style="color:aquamarine">내가 자주가는사이트</h2>
 
 <!--행<tr>을 먼저 만들고 열 <th>,<td>울 만든다 -->
 <table border="1">
